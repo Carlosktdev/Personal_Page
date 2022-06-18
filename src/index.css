@@ -24,11 +24,24 @@ body {
   background-color: #1c1c1c;
 }
 
-.footerBorder {
+.footerBorde {
   border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(27, 27, 27, 0.521);
 }
 
 .hoverLink:hover {
   font-size: 20px;
   transition: 0.3s;
+}
+
+.text {
+  max-width: 400px;
+}
+
+.form-container {
+  max-width: 400px;
+}
+
+a {
+  text-decoration: none;
 }

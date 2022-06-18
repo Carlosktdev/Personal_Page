@@ -11,6 +11,7 @@ import logo_8 from "../../img/logo_8.png";
 import logo_9 from "../../img/logo_9.png";
 import logo_10 from "../../img/logo_10.png";
 import logo_11 from "../../img/logo_11.png";
+import logo_12 from "../../img/logo_12.png";
 
 const skills = [
   logo_1,
@@ -24,22 +25,25 @@ const skills = [
   logo_9,
   logo_10,
   logo_11,
+  logo_12,
 ];
 
 const Skills = () => {
   return (
-    <Container className="skillSection">
+    <Container href={skills} className="skillSection">
       <div className="row text-light align-items-center">
         <div className="col-lg-6  text-center text-md-start">
           <h5 className="text-primary outline">MY SKILLS</h5>
           <h3 className="mt-4">What My Programing skills included?</h3>
           <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            excepturi numquam eveniet possimus optio, quos odit laborum
-            voluptatum ducimus aperiam porro eos voluptate commodi recusandae
-            accusamus doloremque blanditiis qui cupiditate aliquid officia magni
-            ad est aliquam. Deserunt sit dolorum id nemo ullam, alias
-            consequuntur perferendis hic vitae adipisci quod rerum?
+            I have extensive junior level knowledge of various web programming
+            technologies, both front and back end. Especially in MERN stack and
+            NEXT.js, besides this I also have medium knowledge about mobile
+            programming with kotlin and various third party libraries. <br></br>
+            <br></br>
+            In addition to this, I also have knowledge in libraries such as:
+            bootstrap, tailwind, material ui design, redux, axios, retrofit,
+            dagger hilt, room, and more.
           </p>
           <Button className="d-none d-lg-block fw-bold">Hire Me!</Button>
         </div>
