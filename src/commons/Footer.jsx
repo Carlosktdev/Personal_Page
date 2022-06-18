@@ -1,9 +1,12 @@
-import { Button, Container, Form } from "react-bootstrap";
+import { Alert, Button, Container, Form } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const Footer = () => {
+  const [isSent, setIsSent] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "service_q3i8gpk",
@@ -17,6 +20,8 @@ const Footer = () => {
       .catch((err) => {
         console.log(err);
       });
+    e.target.reset();
+    setIsSent(true);
   };
 
   return (
@@ -73,6 +78,14 @@ const Footer = () => {
                 <Button variant="secondary" type="submit" className="px-4">
                   Submit
                 </Button>
+                {isSent ? (
+                  <Alert variant="light" className="mt-3">
+                    <Alert.Heading>Message sent correctly</Alert.Heading>
+                    <p>
+                      Your message has been sent correctly i will be in touch
+                    </p>
+                  </Alert>
+                ) : null}
               </Form>
             </div>
           </div>
