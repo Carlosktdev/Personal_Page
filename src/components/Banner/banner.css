@@ -1,0 +1,10 @@
+.cardItem {
+  margin: 7px 1px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.521);
+}
+
+.icons {
+  height: 80%;
+}
